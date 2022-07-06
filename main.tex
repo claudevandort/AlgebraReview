@@ -1,0 +1,207 @@
+% Source: https://www.youtube.com/watch?v=LwCRRUa8yTU
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{units}
+\usepackage[makeroom]{cancel}
+
+\title{Algebra Review}
+\date{}
+\begin{document}
+    \pagenumbering{gobble}
+    \maketitle
+    \newpage
+    \pagenumbering{arabic}
+    
+    
+    \section{Exponent Rules}
+    Rules that govern expressions like $2^5$ or $x^n$.
+    
+    \subsection{The Product Rule}
+    \begin{equation}
+        x^n \cdot x^m = x^{n+m}
+    \end{equation}
+    \begin{equation*}
+        2^3 \cdot 2^4 = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 2^7 = 2^{3+4}
+    \end{equation*}
+    
+    \subsection{The Quotient Rule}
+    \begin{equation}
+        \frac{x^n}{x^m} = x^{n-m}
+    \end{equation}
+    \begin{equation*}
+        \frac{3^6}{3^2} = \frac{\cancel{3} \cdot \cancel{3} \cdot 3 \cdot 3 \cdot 3 \cdot 3}{\cancel{3} \cdot \cancel{3}} = 3^{6-2} = 3^4
+    \end{equation*}
+    
+    \subsection{The Power Rule}
+    \begin{equation}
+        (x^n)^m = x^{n \cdot m}
+    \end{equation}
+    \begin{align*}
+        (5^4)^3 &= 5^4 \cdot 5^4 \cdot 5^4 \\
+        &= (5 \cdot 5 \cdot 5 \cdot 5 \cdot 5) \cdot (5 \cdot 5 \cdot 5 \cdot 5) \cdot (5 \cdot 5 \cdot 5 \cdot 5) \\
+        &= 5^{12} \\
+        &= 5^{4 \cdot 3}
+    \end{align*}
+    
+    \subsection{Power of Zero}
+    \begin{equation}
+        x^0 = 1; 0^0 = undefined
+    \end{equation}
+    \begin{equation*}
+        1 = \frac{2^3}{2^3} = 2^{3-3}=2^0
+    \end{equation*}
+    
+    \subsection{Negative Exponents}
+    \begin{equation}
+        x^{-n} = \frac{1}{x^n} 
+    \end{equation}
+    \begin{align*}
+        5^7 \cdot 5^{-7} &= 5^{7 + (-7)} = 5^0 = 1 \\
+        5^7 \cdot 5^{-7} &= 1 / ^{\cdot \nicefrac{1}{5^7}} \\
+        \frac{\cancel{5^7} \cdot 5^{-7}}{\cancel{5^7}} &= \frac{1}{5^7} \\
+        5^{-7} &= \frac{1}{5^7}
+    \end{align*}
+    
+    \subsection{Fractional Exponents}
+    \begin{equation}
+        x^{\nicefrac{1}{n}} = \sqrt[n]{x}
+    \end{equation}
+    \begin{align*}
+        (5^{\nicefrac{1}{3}})^3 &= 5^{\nicefrac{1}{3} \cdot 3} = 5^1 = 5 \\
+        (\sqrt[3]{5})^3 &= (\sqrt[\cancel{3}]{5})^\cancel{3} = 5
+    \end{align*}
+    
+    \subsection{Distribute an Exponent over a Product}
+    \begin{equation}
+        (x \cdot y)^n = x^n \cdot y^n
+    \end{equation}
+    \begin{align*}
+        (5 \cdot 7)^3 &= (5 \cdot 7)(5 \cdot 7)(5 \cdot 7) \\
+        &= 5 \cdot 5 \cdot 5 \cdot 7 \cdot 7 \cdot 7 \\
+        &= 5^3 \cdot 7^3
+    \end{align*}
+    
+    \subsection{Distribute an Exponent over a Quotient}
+    \begin{equation}
+        \left( \frac{x}{y} \right) ^n = \frac{x^n}{y^n}
+    \end{equation}
+    \begin{align*}
+        \left( \frac{2}{7} \right)^5 &= \left( \frac{2}{7} \right) \cdot \left( \frac{2}{7} \right) \cdot \left( \frac{2}{7} \right) \cdot \left( \frac{2}{7} \right) \cdot \left( \frac{2}{7} \right) \\
+        &= \frac{2 \cdot 2 \cdot 2 \cdot 2 \cdot 2}{7 \cdot 7 \cdot 7 \cdot 7 \cdot 7} \\
+        &= \frac{2^5}{7^5}
+    \end{align*}
+    We can distribute an exponent over multiplication and division, 
+    but we can't distribute an exponent over addition or subtraction. \\
+    \begin{equation*}
+        (a + b)^n \neq a^n + b^n
+    \end{equation*}
+    \begin{equation*}
+        (a - b)^n \neq a^n - b^n
+    \end{equation*}
+    \begin{align*}
+        (2+3)^2 &\neq 2^2 + 3^2 \\
+        5^2 &\neq 4 + 9 \\
+        25 &\neq 13
+    \end{align*}
+    \begin{align*}
+        (2-3)^2 &\neq 2^2 - 3^2 \\
+        (-1)^2 &\neq 4 - 9 \\
+        1 &\neq (-5)
+    \end{align*}
+    
+    \section{Simplifying with Exponent Rules}
+    \subsection{Exponent Rules}
+    \begin{enumerate}
+        \item The Product Rule $x^n x^m =x^{n+m}$
+        \item The Quotient Rule $\frac{x^n}{x^m} = x^{n-m}$
+        \item The Power Rule $(x^n)^m = x^{n+m}$
+        \item Power of Zero $x^0 = 1$
+        \item Negative Exponents $x^{-1} = \frac{1}{n^n}$
+        \item Fractional Exponents $x^{\nicefrac{1}{n}} = \sqrt[n]{x}$
+        \item Distribute an Exponent over a Product $(a \cdot b)^n = a^n \cdot b^n$
+        \item Distribute an Exponent over a Quotient $\left( \frac{a}{b} \right)^n = \frac{a^n}{b^n}$
+    \end{enumerate}
+    \subsection{Examples}
+    Simplify and answer without negative exponents.
+    \begin{align*}
+        \frac{3x^{-2}}{x^4} 
+        &= \frac{3 \cdot \frac{1}{x^2}}{x^4} 
+        = \frac{\frac{3}{1} \cdot \frac{1}{x^2}}{x^4} 
+        = \frac{\frac{3 \cdot 1}{1 \cdot x^2}}{x^4} 
+        = \frac{\frac{3}{x^2}}{x^4} 
+        = \frac{\frac{3}{x^2}}{\frac{x^4}{1}} 
+        = \frac{3}{x^2} \cdot \frac{1}{x^4} 
+        = \frac{3 \cdot 1}{x^2 \cdot x^4} 
+        = \frac{3}{x^{2+4}} 
+        = \frac{3}{x^6} \\ 
+        or \\
+        &= \frac{3}{1} \cdot \frac{x^{-2}}{x^4} 
+        = 3 \cdot x^{-2-4} 
+        = 3 \cdot x^{-6} 
+        = 3 \cdot \frac{1}{x^6} 
+        = \frac{3}{x^6}
+    \end{align*}
+    \begin{align*}
+        \frac{4y^3}{y^{-5}} 
+        &= \frac{4y^3}{\frac{1}{y^5}}
+        = \frac{4y^3}{1} \cdot \frac{y^5}{1}
+        = 4y^{3+5}
+        = 4y^8 \\
+        or \\
+        &= 4 \cdot y^{3-(-5)}
+        = 4y^{3+5}
+        = 4y^8
+    \end{align*}
+    Simplify and answer without negative exponents.
+    \begin{align*}
+        \frac{y^3z^5}{7z^{-2}y^7} 
+        &= \frac{z^5z^2}{7y^7y^{-3}} 
+        = \frac{z^{5+2}}{7y^{7+(-3)}} 
+        = \frac{z^7}{7y^4}
+    \end{align*}
+    \begin{align*}
+        \left( \frac{25x^4y^{-5}}{x^{-6}y^3} \right)^\frac{3}{2}
+        &= \left( \frac{5^2x^4x^6}{y^3y^5} \right)^\frac{3}{2}
+        = \left( \frac{5^2x^{10}}{y^8} \right)^\frac{3}{2}
+        = \frac{(5^2x^{10})^\frac{3}{2}}{(y^8)^\frac{3}{2}}
+        = \frac{5^{2 \cdot \frac{3}{2}}x^{10 \cdot \frac{3}{2}}}{y^{8 \cdot \frac{3}{2}}}
+        = \frac{5^3x^{15}}{y^{12}}
+        = \frac{125x^{15}}{y^{12}}
+    \end{align*}
+    
+    \section{Simplifying Radicals}
+    \subsection{Rules of Radicals}
+    \begin{itemize}
+        \item $\sqrt[n]{a \cdot b} = \sqrt[n]{a} \sqrt[n]{b}$
+        \item $\sqrt[n]{\frac{a}{b}} = \frac{\sqrt[n]{a}}{\sqrt[n]{b}}$
+        \item $a^{\frac{m}{n}} = \sqrt[n]{a^m} = (\sqrt[n]{a})^m$
+    \end{itemize}
+    \subsection{Examples}
+    \begin{align*}
+        (25)^{-\frac{3}{2}} 
+        &= \frac{1}{(5^2)^{\frac{3}{2}}}
+        = \frac{1}{5^3}
+        = \frac{1}{125}
+    \end{align*}
+    \begin{align*}
+        \sqrt{60x^2y^6z^{-11}}
+        &= \sqrt{\frac{60x^2y^6}{z^{-11}}}
+        = \sqrt{\frac{(2^2 \cdot 3 \cdot 5)x^2y^2y^2y^2}{z \cdot z^2z^2z^2z^2z^2}}
+        = \sqrt{\frac{(2^2 \cdot 3 \cdot 5)x^2(y^2)^3}{z \cdot (z^2)^5}} \\
+        &= \frac{\sqrt[\cancel{2}]{2^{\cancel{2}}}\sqrt[2]{3 \cdot 5}\sqrt[\cancel{2}]{x^{\cancel{2}}}\sqrt[\cancel{2}]{(y^3)^{\cancel{2}}}}{\sqrt[2]{z}\sqrt[\cancel{2}]{(z^5)^{\cancel{2}}}}
+        = \frac{2\sqrt{15} \cdot x \cdot y^3}{\sqrt{z} \cdot z^5}\\
+        &= \frac{2\sqrt{15} \cdot x \cdot y^3}{\sqrt{z} \cdot z^5} \cdot \frac{\sqrt{z}}{\sqrt{z}}
+        = \frac{2\sqrt{15z}xy^3}{z^6}
+    \end{align*}
+    \begin{align*}
+        \frac{3x}{\sqrt{x}} 
+        = \frac{3x}{\sqrt{x}} \cdot \frac{\sqrt{x}}{\sqrt{x}} 
+        = \frac{3x\sqrt{x}}{(\sqrt[\cancel{2}]{x})^{\cancel{2}}}
+        = \frac{3\cancel{x}\sqrt{x}}{\cancel{x}}
+        = 3\sqrt{x}
+    \end{align*}
+    
+    \section{Factoring}
+\end{document}
